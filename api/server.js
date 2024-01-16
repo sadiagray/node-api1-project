@@ -59,11 +59,11 @@ server.get('/api/users/:id', (req, res) => {
     })
 })
 
-server.use('*', (req, res) => {
-    res.status(404).json({
-        message: 'not found'
-    })
-})
+// server.use('*', (req, res) => {
+//     res.status(404).json({
+//         message: 'not found'
+//     })
+// })
 
 server.put('/api/users/:id', async(req,res) => {
     try {
